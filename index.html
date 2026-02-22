@@ -1,122 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Institute for Community Systems & Climate Governance</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICSCG | Community-Led Systems & Climate Governance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f7;
-            color: #1f2d3d;
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fb;
+            color: #1a1a1a;
+            line-height: 1.6;
         }
-
         header {
-            background-color: #0f2a3d;
+            background: #0f2b46;
             color: white;
             padding: 60px 20px;
             text-align: center;
         }
-
         header h1 {
             margin: 0;
-            font-size: 2.2rem;
+            font-size: 32px;
+            font-weight: 600;
         }
-
         header p {
             margin-top: 15px;
-            font-size: 1.1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
             opacity: 0.9;
         }
-
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0f2b46;
+            font-weight: 500;
+        }
         section {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 0 20px;
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
         }
-
-        h2 {
-            color: #0f2a3d;
+        section h2 {
+            font-size: 24px;
             margin-bottom: 20px;
+            color: #0f2b46;
         }
-
-        .mission {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        .focus-grid {
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+            gap: 30px;
         }
-
         .card {
             background: white;
             padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-
         footer {
-            background: #0f2a3d;
+            background: #0f2b46;
             color: white;
             text-align: center;
-            padding: 25px;
-            font-size: 0.9rem;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
-
 <body>
 
 <header>
-    <h1>Institute for Community Systems & Climate Governance</h1>
-    <p>Advancing decentralized, resilient, and community-led sustainability systems.</p>
+    <h1>Institute for Community Systems & Climate Governance (ICSCG)</h1>
+    <p>
+        Advancing policy research, governance design, and data systems that enable
+        accountable, investable, and community-led climate and energy transitions.
+    </p>
 </header>
 
-<section>
-    <h2>Mission</h2>
-    <p class="mission">
-        The Institute for Community Systems & Climate Governance is dedicated to advancing
-        decentralized sustainability systems, renewable energy governance, and
-        climate-aligned economic models. We bridge policy, engineering,
-        and systems thinking to enable resilient community-scale solutions.
-    </p>
-</section>
+<nav>
+    <a href="#policy">Policy Research</a>
+    <a href="#governance">Climate Governance</a>
+    <a href="#datalab">Data Lab</a>
+    <a href="#academy">Academy</a>
+    <a href="#projects">Projects</a>
+</nav>
 
-<section>
-    <h2>Focus Areas</h2>
-    <div class="focus-grid">
+<section id="policy">
+    <h2>Policy Research</h2>
+    <div class="grid">
         <div class="card">
-            <h3>Community Energy Systems</h3>
-            <p>Designing and governing localized renewable energy infrastructure for resilience and equity.</p>
+            <h3>Working Papers</h3>
+            <p>Structured research on governance frameworks, energy systems, and accountability design.</p>
         </div>
-
         <div class="card">
-            <h3>Climate Governance</h3>
-            <p>Institutional frameworks for transparent, accountable climate and energy transitions.</p>
+            <h3>Policy Briefs</h3>
+            <p>Evidence-based recommendations for regulators, investors, and development partners.</p>
         </div>
-
         <div class="card">
-            <h3>Sustainable Economic Systems</h3>
-            <p>Aligning financial structures and incentives with long-term ecological stability.</p>
+            <h3>Systems Notes</h3>
+            <p>Technical insights on execution risk, decision-stage responsibility, and coordination design.</p>
         </div>
     </div>
 </section>
 
-<section>
-    <h2>Publications & Research</h2>
+<section id="governance">
+    <h2>Climate Governance</h2>
     <p>
-        Working papers, technical frameworks, and applied governance models
-        will be published here.
+        ICSCG designs governance frameworks that clarify responsibility at the point of decision,
+        strengthen stakeholder alignment, and reduce execution risk in decentralized energy systems.
+    </p>
+</section>
+
+<section id="datalab">
+    <h2>Data Lab</h2>
+    <p>
+        The ICSCG Data Lab develops measurable governance and execution-layer variables
+        to improve energy system planning, modeling accuracy, and investment decision-making.
+    </p>
+    <div class="grid">
+        <div class="card">
+            <h3>Governance Risk Indicators</h3>
+            <p>Quantifying responsibility, consent durability, and operator commitment.</p>
+        </div>
+        <div class="card">
+            <h3>Community Demand Profiling</h3>
+            <p>Structured local-level energy demand and productive-use analysis.</p>
+        </div>
+        <div class="card">
+            <h3>Electrification Readiness</h3>
+            <p>Assessment variables for decentralized and hybrid energy deployment.</p>
+        </div>
+    </div>
+</section>
+
+<section id="academy">
+    <h2>ICSCG Academy</h2>
+    <p>
+        Capacity-building initiatives for governance leaders, practitioners, and researchers
+        working at the intersection of climate, energy, and community systems.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects & Partnerships</h2>
+    <p>
+        Ongoing and pilot initiatives integrating governance design, data development,
+        and policy research to support resilient community-led energy systems.
     </p>
 </section>
 
 <footer>
-    © 2026 Institute for Community Systems & Climate Governance
+    © 2026 Institute for Community Systems & Climate Governance (ICSCG) |
+    info@icscg.org
 </footer>
 
 </body>
